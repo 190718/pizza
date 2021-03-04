@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pizza/screens/home/menu_home_screen.dart';
 import 'package:pizza/screens/singup/singup_screen.dart';
 
 class LoginCard extends StatefulWidget {
@@ -55,7 +56,7 @@ class _LoginCardState extends State<LoginCard> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: FlatButton(
-                      onPressed: () {},
+                      onPressed: () => Get.to(MenuHomeScreen()),
                       color: Colors.blueGrey[300],
                       child: Row(
                         children: [

@@ -23,7 +23,7 @@ class _SingUpCardState extends State<SingUpCard> {
       child: Container(
         padding: EdgeInsets.all(16),
         width: MediaQuery.of(context).size.width * 0.75,
-        height: 360,
+        height: 320,
         child: Form(
           child: Column(
             children: [
@@ -63,7 +63,7 @@ class _SingUpCardState extends State<SingUpCard> {
                 onSaved: (value) => _authData['senha'] = value,
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(16.0),
                 child: FlatButton(
                   onPressed: () => Get.to(LoginScreen()),
                   color: Colors.blueGrey[300],
