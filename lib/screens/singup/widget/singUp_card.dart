@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pizza/screens/login/login_screen.dart';
 import 'package:pizza/screens/singup/singup_screen.dart';
 
-class LoginCard extends StatefulWidget {
+class SingUpCard extends StatefulWidget {
   @override
-  _LoginCardState createState() => _LoginCardState();
+  _SingUpCardState createState() => _SingUpCardState();
 }
 
-class _LoginCardState extends State<LoginCard> {
+class _SingUpCardState extends State<SingUpCard> {
   Map<String, String> _authData = {
     'email': '',
     'senha': '',
@@ -22,7 +23,7 @@ class _LoginCardState extends State<LoginCard> {
       child: Container(
         padding: EdgeInsets.all(16),
         width: MediaQuery.of(context).size.width * 0.75,
-        height: 260,
+        height: 360,
         child: Form(
           child: Column(
             children: [
@@ -50,37 +51,24 @@ class _LoginCardState extends State<LoginCard> {
                 },
                 onSaved: (value) => _authData['senha'] = value,
               ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: FlatButton(
-                      onPressed: () {},
-                      color: Colors.blueGrey[300],
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.local_pizza_sharp,
-                            color: Colors.amber,
-                          ),
-                          Text(' Entrar '),
-                          Icon(
-                            Icons.local_pizza_sharp,
-                            color: Colors.amber,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: FlatButton(
-                      onPressed: () => Get.to(SingUpScreen()),
-                      color: Colors.blueGrey[300],
-                      child: Text('Cadastrar'),
-                    ),
-                  ),
-                ],
+              TextFormField(
+                decoration: InputDecoration(labelText: 'Confirmar senha'),
+                obscureText: true,
+                validator: (value) {
+                  if (value.isEmpty || value.length < 5) {
+                    return "Informe um senha válida!";
+                  }
+                  return null;
+                },
+                onSaved: (value) => _authData['senha'] = value,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FlatButton(
+                  onPressed: () => Get.to(LoginScreen()),
+                  color: Colors.blueGrey[300],
+                  child: Text(' Confiirmar '),
+                ),
               ),
             ],
           ),
