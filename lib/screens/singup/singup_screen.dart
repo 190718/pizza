@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:pizza/screens/singup/widget/singUp_card.dart';
 
 class SingUpScreen extends StatefulWidget {

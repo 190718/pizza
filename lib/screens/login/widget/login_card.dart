@@ -55,9 +55,8 @@ class _LoginCardState extends State<LoginCard> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: FlatButton(
+                    child: OutlinedButton(
                       onPressed: () => Get.to(MenuHomeScreen()),
-                      color: Colors.blueGrey[300],
                       child: Row(
                         children: [
                           Icon(
@@ -75,9 +74,8 @@ class _LoginCardState extends State<LoginCard> {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: FlatButton(
+                    child: OutlinedButton(
                       onPressed: () => Get.to(SingUpScreen()),
-                      color: Colors.blueGrey[300],
                       child: Text('Cadastrar'),
                     ),
                   ),

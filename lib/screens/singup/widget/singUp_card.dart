@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pizza/screens/login/login_screen.dart';
-import 'package:pizza/screens/singup/singup_screen.dart';
 
 class SingUpCard extends StatefulWidget {
   @override
@@ -64,9 +63,8 @@ class _SingUpCardState extends State<SingUpCard> {
               ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: FlatButton(
+                child: OutlinedButton(
                   onPressed: () => Get.to(LoginScreen()),
-                  color: Colors.blueGrey[300],
                   child: Text(' Confiirmar '),
                 ),
               ),
