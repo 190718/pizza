@@ -21,7 +21,7 @@ class _LoginCardState extends State<LoginCard> {
       child: Container(
         padding: EdgeInsets.all(16),
         width: MediaQuery.of(context).size.width * 0.75,
-        height: 350,
+        height: 260,
         child: Form(
           child: Column(
             children: [
@@ -48,6 +48,38 @@ class _LoginCardState extends State<LoginCard> {
                   return null;
                 },
                 onSaved: (value) => _authData['senha'] = value,
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: FlatButton(
+                      onPressed: () {},
+                      color: Colors.blueGrey[300],
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.local_pizza_sharp,
+                            color: Colors.amber,
+                          ),
+                          Text(' Entrar '),
+                          Icon(
+                            Icons.local_pizza_sharp,
+                            color: Colors.amber,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: FlatButton(
+                      onPressed: () {},
+                      color: Colors.blueGrey[300],
+                      child: Text('Cadastrar'),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
