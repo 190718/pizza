@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 Widget cardItem() {
   return Card(
-    color: Colors.white,
+    elevation: 4,
+    color: Colors.green[50],
     child: Column(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
