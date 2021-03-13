@@ -5,7 +5,9 @@ class MenuHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+      ),
       drawer: Drawer(),
       body: ListView(
         children: [
@@ -15,6 +17,11 @@ class MenuHomeScreen extends StatelessWidget {
           cardItem(),
           cardItem(),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.green,
+        onPressed: () {},
+        child: Icon(Icons.chat),
       ),
     );
   }
