@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pizza/menu_cards/cards_itens.dart';
+import 'package:pizza/screens/widgets/custon_drawer/custon_drawer.dart';
 
 class MenuHomeScreen extends StatelessWidget {
   @override
@@ -9,7 +10,9 @@ class MenuHomeScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.green,
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: CustomDrawer(),
+      ),
       body: ListView(
         children: [
           Padding(
