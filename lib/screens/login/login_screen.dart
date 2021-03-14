@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pizza/screens/login/widget/login_card.dart';
 
+//inico da classe Login como Stateful
 class LoginScreen extends StatefulWidget {
   @override
   _LoginScreenState createState() => _LoginScreenState();
@@ -51,9 +52,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
+                //criando espaçamento entre os objetos
                 SizedBox(
                   height: 30,
                 ),
+                //Chamando formulario de Login
                 LoginCard(),
               ],
             ),

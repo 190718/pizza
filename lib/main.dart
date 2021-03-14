@@ -9,8 +9,10 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    //GetMaterialApp faz parte da biblioteca GetX
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      //home chama a classe que irá iniciar na tela
       home: LoginScreen(),
     );
   }
