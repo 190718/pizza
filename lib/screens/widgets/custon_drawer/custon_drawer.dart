@@ -8,11 +8,17 @@ class CustomDrawer extends StatefulWidget {
 class _CustomDrawerState extends State<CustomDrawer> {
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return Column(
       children: [
+        SizedBox(
+          height: 25,
+        ),
         Container(
-          color: Colors.green[300],
-          height: 150,
+          //color: Colors.green[300],
+          height: 170,
+          child: Image(
+            image: AssetImage('assets/images/negocio.jpg'),
+          ),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
@@ -119,6 +125,62 @@ class _CustomDrawerState extends State<CustomDrawer> {
                       onPressed: () {},
                       child: Text(
                         'Acompanhar Pedido',
+                        style: TextStyle(
+                          color: Colors.green,
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Card(
+            elevation: 3,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                width: double.infinity,
+                child: Row(
+                  children: [
+                    Icon(Icons.lock),
+                    TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        'Funcionarios',
+                        style: TextStyle(
+                          color: Colors.green,
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Card(
+            elevation: 3,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                width: double.infinity,
+                child: Row(
+                  children: [
+                    Icon(Icons.lock),
+                    TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        'Funcionarios',
                         style: TextStyle(
                           color: Colors.green,
                           fontSize: 20,
