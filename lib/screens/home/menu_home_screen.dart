@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:pizza/menu_cards/cards_itens.dart';
+import 'package:pizza/screens/chat/chat_screen.dart';
 import 'package:pizza/screens/widgets/custon_drawer/custon_drawer.dart';
 
 class MenuHomeScreen extends StatelessWidget {
@@ -94,8 +96,8 @@ class MenuHomeScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         //cor do botão
         backgroundColor: Colors.green,
-        //função de click, nulla
-        onPressed: () {},
+        //Inicia tela de chat
+        onPressed: () => Get.to(ChatScreen()),
         //Um filho com icone de chat
         child: Icon(Icons.chat),
       ),
