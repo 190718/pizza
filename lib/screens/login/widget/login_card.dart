@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pizza/screens/home/menu_home_screen.dart';
+import 'package:pizza/screens/home/home_funcionario/menu_home_funcionario.dart';
 import 'package:pizza/screens/singup/singup_screen.dart';
 
 class LoginCard extends StatefulWidget {
