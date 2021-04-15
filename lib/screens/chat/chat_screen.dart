@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pizza/menu_cards/cards_itens.dart';
 
 class ChatScreen extends StatelessWidget {
   @override
